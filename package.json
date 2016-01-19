@@ -1,0 +1,19 @@
+{
+  "name": "utility-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeulvila/utility-functions.git"
+  },
+  "author": "Mike Ulvila <mikeulvila@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeulvila/utility-functions/issues"
+  },
+  "homepage": "https://github.com/mikeulvila/utility-functions#readme"
+}
