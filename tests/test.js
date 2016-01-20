@@ -22,7 +22,7 @@ describe('hello world module', function () {
 
 describe('utility functions', function () {
   describe('range', function () {
-    var range = require('../range.js');
+    var range = require('../range');
     it('range should output an array', function () {
       expect(range()).to.be.an('array');
     });
@@ -43,10 +43,21 @@ describe('utility functions', function () {
      expect(range(3, 5)).to.eql([3,4]);
      expect(range(4, 9)).to.eql([4,5,6,7,8]);
     });
-
   });
 
+  describe('rangeObj', function () {
+    var rangeObj = require('../rangeObj');
 
+    it('should return an object', function () {
+      expect(rangeObj()).to.be.an.object;
+    });
 
+    it('should return an object range', function () {
+      expect(rangeObj()).to.eql({});
+      expect(rangeObj(3)).to.eql({0:0, 1:1, 2:2});
+      expect(rangeObj(5)).to.eql({0:0, 1:1, 2:2, 3:3, 4:4});
+    });
+  
+  });
 
 });
